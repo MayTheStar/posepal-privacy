@@ -4,60 +4,60 @@
   <meta charset="UTF-8" />
   <title>Privacy Policy | سياسة الخصوصية</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
       font-family: Arial, sans-serif;
-      line-height: 1.8;
+      background-color: #3E2180;
       color: #333;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 60px auto;
       background-color: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       text-align: center;
       color: #3E2180;
+      margin-bottom: 10px;
     }
 
-    h2 {
-      margin-top: 40px;
-      color: #3E2180;
+    .date {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #666;
     }
 
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .section-title {
       font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 15px;
       color: #3E2180;
-      font-size: 18px;
-      margin-bottom: 10px;
     }
 
     .lang-section {
       display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    .lang {
-      width: 100%;
-    }
-
-    @media (min-width: 700px) {
-      .lang {
-        width: 48%;
-      }
+    .lang.en, .lang.ar {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
     }
 
     .lang.ar {
@@ -65,21 +65,26 @@
       text-align: right;
     }
 
-    p {
-      margin: 0 0 15px;
+    @media (min-width: 768px) {
+      .lang-section {
+        flex-direction: row;
+      }
+
+      .lang {
+        width: 50%;
+      }
     }
 
-    .contact {
-      margin-top: 50px;
+    strong {
+      color: #3E2180;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Privacy Policy | سياسة الخصوصية</h1>
-    <p style="text-align:center;">Last updated: May 25, 2025</p>
+    <div class="date">Last updated: May 25, 2025</div>
 
-    <!-- Section 1 -->
     <div class="section">
       <div class="section-title">1. Information Collection | جمع المعلومات</div>
       <div class="lang-section">
@@ -94,7 +99,6 @@
       </div>
     </div>
 
-    <!-- Section 2 -->
     <div class="section">
       <div class="section-title">2. How Data Is Used | كيفية استخدام البيانات</div>
       <div class="lang-section">
@@ -109,7 +113,6 @@
       </div>
     </div>
 
-    <!-- Section 3 -->
     <div class="section">
       <div class="section-title">3. Data Security | أمان البيانات</div>
       <div class="lang-section">
@@ -122,7 +125,6 @@
       </div>
     </div>
 
-    <!-- Section 4 -->
     <div class="section">
       <div class="section-title">4. Third Parties | الجهات الخارجية</div>
       <div class="lang-section">
@@ -135,7 +137,6 @@
       </div>
     </div>
 
-    <!-- Section 5 -->
     <div class="section">
       <div class="section-title">5. Your Rights | حقوقك</div>
       <div class="lang-section">
@@ -148,8 +149,7 @@
       </div>
     </div>
 
-    <!-- Section 6 -->
-    <div class="section contact">
+    <div class="section">
       <div class="section-title">6. Contact Us | تواصل معنا</div>
       <div class="lang-section">
         <div class="lang en">
